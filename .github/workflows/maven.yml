@@ -30,7 +30,7 @@ jobs:
     - name: Build with Maven
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      run: mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=testorggfcfg_coreengine  -Dsonar.host.url=https://sonarcloud.io/  -Dsonar.login=61d8f31ccf215c7997e6ae265727ca5f9754cd44
+      run: mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=qf-dhl_vulnerable-java-application  -Dsonar.host.url=https://sonarcloud.io/  -Dsonar.login=61d8f31ccf215c7997e6ae265727ca5f9754cd44
 
     # # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     # - name: Update dependency graph
